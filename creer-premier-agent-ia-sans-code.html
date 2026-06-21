@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créer son premier agent IA sans code : par où commencer | Symbotis Occitanie</title>
+    <meta name="description" content="La différence entre un chatbot et un agent, les briques d'un agent IA, et comment en mettre un en place sans écrire de code dans une TPE ou une PME.">
+    <meta property="og:title" content="Créer son premier agent IA sans code : par où commencer">
+    <meta property="og:description" content="La différence entre un chatbot et un agent, les briques d'un agent IA, et comment en mettre un en place sans écrire de code dans une TPE ou une PME.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://blog.symbotis.com/creer-premier-agent-ia-sans-code.html">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <style>
+        :root { --Symbotis-blue: #1F2A63; --Symbotis-orange: #F39448; --Symbotis-gray: #6B7280; }
+        .bg-Symbotis-blue { background-color: var(--Symbotis-blue); }
+        .text-Symbotis-blue { color: var(--Symbotis-blue); }
+        .bg-Symbotis-orange { background-color: var(--Symbotis-orange); }
+        .text-Symbotis-orange { color: var(--Symbotis-orange); }
+        .border-Symbotis-orange { border-color: var(--Symbotis-orange); }
+        .gradient-bg { background: linear-gradient(135deg, var(--Symbotis-blue) 0%, #2563EB 100%); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1); }
+        .stats-card { background: linear-gradient(135deg, var(--Symbotis-orange) 0%, #F97316 100%); }
+        .prose-content p { margin-bottom: 1.25rem; line-height: 1.8; }
+        .prose-content h2 { margin-top: 2.5rem; }
+        .prose-content ul { margin-bottom: 1.25rem; }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <header class="bg-Symbotis-blue text-white shadow-lg">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <a href="https://www.symbotis.com/" class="text-2xl font-bold text-Symbotis-orange">Symbotis</a>
+                    <span class="ml-4 text-sm opacity-75">/ Blog</span>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="https://www.symbotis.com/" class="hover:text-Symbotis-orange transition-colors">Accueil</a>
+                    <a href="https://www.symbotis.com/#services" class="hover:text-Symbotis-orange transition-colors">Services</a>
+                    <a href="https://www.symbotis.com/#expertise" class="hover:text-Symbotis-orange transition-colors">Expertise</a>
+                    <a href="https://www.symbotis.com/#contact" class="hover:text-Symbotis-orange transition-colors">Contact</a>
+                    <a href="index.html" class="bg-Symbotis-orange px-4 py-2 rounded hover:bg-orange-600 transition-colors">Blog</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="bg-white border-b">
+        <div class="container mx-auto px-6 py-3">
+            <nav class="flex items-center space-x-2 text-sm">
+                <a href="index.html" class="text-Symbotis-blue hover:text-Symbotis-orange"><i class="fas fa-home mr-1"></i>Accueil Blog</a>
+                <span class="text-gray-400">/</span>
+                <span class="text-gray-600">Premier agent IA sans code</span>
+            </nav>
+        </div>
+    </div>
+
+    <section class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <span class="inline-block bg-Symbotis-orange px-4 py-2 rounded-full text-sm font-medium mb-4">
+                    <i class="fas fa-diagram-project mr-2"></i>Agents IA
+                </span>
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Créer son premier agent IA sans code</h1>
+                <p class="text-xl opacity-90 mb-8">La différence entre un chatbot et un agent, et comment en mettre un en place sans écrire de code</p>
+                <div class="flex flex-wrap justify-center gap-4 text-sm">
+                    <span><i class="fas fa-calendar mr-1"></i>Juin 2026</span>
+                    <span><i class="fas fa-user mr-1"></i>Symbotis</span>
+                    <span><i class="fas fa-clock mr-1"></i>8 min de lecture</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-4"><div class="stats-card text-white p-6 rounded-lg text-center card-hover"><div class="text-3xl font-bold mb-2">0</div><div class="text-sm opacity-90">ligne de code à écrire</div><div class="text-xs mt-1">plateformes no-code</div></div><div class="stats-card text-white p-6 rounded-lg text-center card-hover"><div class="text-3xl font-bold mb-2">3 briques</div><div class="text-sm opacity-90">cerveau, contexte, outils</div><div class="text-xs mt-1">architecture d'un agent</div></div><div class="stats-card text-white p-6 rounded-lg text-center card-hover"><div class="text-3xl font-bold mb-2">~ dizaines €</div><div class="text-sm opacity-90">de coût mensuel pour un agent modeste</div><div class="text-xs mt-1">abonnement + usage</div></div></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="py-8 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-lg shadow-lg p-8 mb-8 prose-content text-gray-700">
+<p>Le mot « agent » revient partout, souvent sans définition claire. Pourtant l'idée est simple, et on peut construire un premier agent utile sans savoir coder. Voici les repères pour s'y mettre.</p>
+<h2 class="text-2xl font-bold text-Symbotis-blue">Chatbot ou agent : la vraie différence</h2>
+<p>Un chatbot répond. Un agent agit. Si vous demandez à un chatbot de prendre un rendez-vous, il vous explique comment faire. Un agent, lui, enchaîne plusieurs étapes seul : il reçoit une information, décide quoi faire, utilise des outils (un fichier, un mail, une API), observe le résultat et continue jusqu'à la fin de la tâche.</p>
+<h2 class="text-2xl font-bold text-Symbotis-blue">Les briques d'un agent</h2>
+<p>Un agent repose sur trois éléments. Le cerveau, c'est le modèle d'IA (Claude par exemple) qui comprend et raisonne. Le contexte, ce sont vos données : fiches, historique, savoir métier. Les outils, ce sont les actions concrètes : envoyer un mail, mettre à jour une fiche, lire un document. Le cycle se résume à percevoir, décider, agir.</p>
+<h2 class="text-2xl font-bold text-Symbotis-blue">Un exemple concret pour une PME</h2>
+<p>Imaginez un agent de veille : chaque matin, il lit quelques sources spécialisées, fait analyser les nouveautés par l'IA et vous envoie un résumé des points importants. Vous gagnez vingt minutes par jour et vous ne ratez rien. Ce type d'automatisation se construit sans code.</p>
+<h2 class="text-2xl font-bold text-Symbotis-blue">Les plateformes no-code</h2>
+<p>Des outils comme n8n ou Make relient un moteur d'IA, une mémoire et des actions dans une interface visuelle. Vous assemblez des blocs plutôt que d'écrire du code. C'est la voie la plus accessible pour un premier agent en entreprise.</p>
+<h2 class="text-2xl font-bold text-Symbotis-blue">Le vrai travail : cadrer et tester</h2>
+<p>La technique n'est pas le plus dur. L'essentiel du temps passe dans le cadrage (quel objectif précis, quelles limites) et les tests. Un agent mal cadré fait des erreurs coûteuses. Commencez petit, sur une tâche à faible risque, puis élargissez une fois la confiance établie.</p>
+</div>
+
+                <div class="bg-white rounded-lg shadow-lg p-8 mb-8 border-l-4 border-Symbotis-orange">
+                    <h3 class="text-lg font-semibold text-Symbotis-blue mb-3"><i class="fas fa-book-open mr-2 text-Symbotis-orange"></i>Pour aller plus loin</h3>
+                    <p class="text-gray-700">Pour une méthode complète, étape par étape : <a href="https://learnyflow.com/blog/creer-un-agent-ia/" class="text-blue-600 hover:underline">Créer un agent IA sans code, le guide pas à pas</a>.</p>
+                </div>
+
+                <div class="gradient-bg text-white rounded-lg p-8 mb-8">
+                    <div class="text-center">
+                        <h3 class="text-2xl font-bold mb-4">Envie d'aller plus vite avec l'IA ?</h3>
+                        <p class="mb-6">Symbotis aide les TPE, PME et ETI d'Occitanie à choisir les bons outils, former leurs équipes et automatiser ce qui peut l'être. Le premier échange est gratuit.</p>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                            <a href="https://www.symbotis.com/#contact" class="bg-Symbotis-orange hover:bg-orange-600 text-white px-8 py-3 rounded-lg font-semibold transition-colors"><i class="fas fa-calendar-check mr-2"></i>Diagnostic gratuit</a>
+                            <a href="mailto:contact@symbotis.com" class="bg-white bg-opacity-20 hover:bg-opacity-30 text-white px-8 py-3 rounded-lg font-semibold transition-colors"><i class="fas fa-envelope mr-2"></i>contact@symbotis.com</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-8 mb-8">
+                    <h2 class="text-2xl font-bold text-Symbotis-blue mb-6">Articles connexes</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6"><a href="claude-explique-simplement-petite-entreprise.html" class="block border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow"><div class="flex items-center mb-4"><div class="bg-Symbotis-blue text-white p-3 rounded-lg mr-4"><i class="fas fa-lightbulb text-xl"></i></div><div><h3 class="text-lg font-semibold text-Symbotis-blue">Claude expliqué simplement</h3></div></div><p class="text-gray-700">Ce qu'est Claude, ce qu'il sait faire, ses limites, et quand le préférer à un autre outil.</p></a><a href="comprendre-harnais-agent-ia.html" class="block border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow"><div class="flex items-center mb-4"><div class="bg-Symbotis-orange text-white p-3 rounded-lg mr-4"><i class="fas fa-microchip text-xl"></i></div><div><h3 class="text-lg font-semibold text-Symbotis-blue">Le harnais d'un agent IA</h3></div></div><p class="text-gray-700">Pourquoi le modèle ne suffit pas, et ce que le harnais apporte à la fiabilité d'un agent.</p></a></div>
+                </div>
+
+                <div class="bg-gray-100 rounded-lg p-6 mb-8">
+                    <h3 class="text-lg font-semibold text-Symbotis-blue mb-4">Sources et références</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm"><div><h4 class="font-semibold mb-2">Learnyflow :</h4><a href="https://learnyflow.com/blog/creer-un-agent-ia/" class="text-blue-600 hover:underline block mb-1">Créer un agent IA sans code : le guide complet</a></div><div><h4 class="font-semibold mb-2">iaMonde :</h4><a href="https://iamonde.fr/creer-votre-premier-agent-ia-avec-make-et-claude/" class="text-blue-600 hover:underline block mb-1">Créer votre premier agent IA avec n8n et Claude</a></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-Symbotis-blue text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-Symbotis-orange">Symbotis</h3>
+                    <p class="text-gray-300 mb-4">Transformation & Innovation made easy</p>
+                    <p class="text-gray-400 text-sm">Expert en accompagnement digital, transformation IA et formation TPE PME en Occitanie.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Navigation</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="index.html" class="hover:text-Symbotis-orange transition-colors">Accueil Blog</a></li>
+                        <li><a href="formation-ia-tpe-pme.html" class="hover:text-Symbotis-orange transition-colors">Formation IA</a></li>
+                        <li><a href="digitalisation-tpe-pme.html" class="hover:text-Symbotis-orange transition-colors">Digitalisation</a></li>
+                        <li><a href="cybersecurite-pme.html" class="hover:text-Symbotis-orange transition-colors">Cybersécurité</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">symbotis.com</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="https://www.symbotis.com/" class="hover:text-Symbotis-orange transition-colors">Accueil</a></li>
+                        <li><a href="https://www.symbotis.com/#services" class="hover:text-Symbotis-orange transition-colors">Services</a></li>
+                        <li><a href="https://www.symbotis.com/#expertise" class="hover:text-Symbotis-orange transition-colors">Expertise</a></li>
+                        <li><a href="https://www.symbotis.com/#contact" class="hover:text-Symbotis-orange transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <div class="space-y-2 text-gray-300">
+                        <p><i class="fas fa-envelope mr-2"></i><a href="mailto:contact@symbotis.com" class="hover:text-Symbotis-orange transition-colors">contact@symbotis.com</a></p>
+                        <p><i class="fas fa-phone mr-2"></i><a href="tel:+33686846429" class="hover:text-Symbotis-orange transition-colors">+33 (0)6 86 84 64 29</a></p>
+                        <p><i class="fas fa-map-marker-alt mr-2"></i>Occitanie, France</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-600 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 Symbotis - Tous droits réservés | Accompagnement Digital & Formation IA TPE PME Occitanie</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bien démarrer avec Claude (Anthropic) : le guide pour une TPE/PME | Symbotis Occitanie</title>
+    <meta name="description" content="Comment démarrer avec Claude, l'IA d'Anthropic, quand on dirige une petite entreprise : créer un compte, écrire ses premiers prompts, choisir un forfait et trouver des usages utiles.">
+    <meta property="og:title" content="Bien démarrer avec Claude (Anthropic) : le guide pour une TPE/PME">
+    <meta property="og:description" content="Comment démarrer avec Claude, l'IA d'Anthropic, quand on dirige une petite entreprise : créer un compte, écrire ses premiers prompts, choisir un forfait et trouver des usages utiles.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://blog.symbotis.com/claude-demarrer-tpe-pme.html">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <style>
+        :root { --Symbotis-blue: #1F2A63; --Symbotis-orange: #F39448; --Symbotis-gray: #6B7280; }
+        .bg-Symbotis-blue { background-color: var(--Symbotis-blue); }
+        .text-Symbotis-blue { color: var(--Symbotis-blue); }
+        .bg-Symbotis-orange { background-color: var(--Symbotis-orange); }
+        .text-Symbotis-orange { color: var(--Symbotis-orange); }
+        .border-Symbotis-orange { border-color: var(--Symbotis-orange); }
+        .gradient-bg { background: linear-gradient(135deg, var(--Symbotis-blue) 0%, #2563EB 100%); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1); }
+        .stats-card { background: linear-gradient(135deg, var(--Symbotis-orange) 0%, #F97316 100%); }
+        .prose-content p { margin-bottom: 1.25rem; line-height: 1.8; }
+        .prose-content h2 { margin-top: 2.5rem; }
+        .prose-content ul { margin-bottom: 1.25rem; }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <header class="bg-Symbotis-blue text-white shadow-lg">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <a href="https://www.symbotis.com/" class="text-2xl font-bold text-Symbotis-orange">Symbotis</a>
+                    <span class="ml-4 text-sm opacity-75">/ Blog</span>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="https://www.symbotis.com/" class="hover:text-Symbotis-orange transition-colors">Accueil</a>
+                    <a href="https://www.symbotis.com/#services" class="hover:text-Symbotis-orange transition-colors">Services</a>
+                    <a href="https://www.symbotis.com/#expertise" class="hover:text-Symbotis-orange transition-colors">Expertise</a>
+                    <a href="https://www.symbotis.com/#contact" class="hover:text-Symbotis-orange transition-colors">Contact</a>
+                    <a href="index.html" class="bg-Symbotis-orange px-4 py-2 rounded hover:bg-orange-600 transition-colors">Blog</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="bg-white border-b">
+        <div class="container mx-auto px-6 py-3">
+            <nav class="flex items-center space-x-2 text-sm">
+                <a href="index.html" class="text-Symbotis-blue hover:text-Symbotis-orange"><i class="fas fa-home mr-1"></i>Accueil Blog</a>
+                <span class="text-gray-400">/</span>
+                <span class="text-gray-600">Bien démarrer avec Claude</span>
+            </nav>
+        </div>
+    </div>
+
+    <section class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <span class="inline-block bg-Symbotis-orange px-4 py-2 rounded-full text-sm font-medium mb-4">
+                    <i class="fas fa-robot mr-2"></i>Outils IA
+                </span>
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Bien démarrer avec Claude quand on dirige une TPE ou une PME</h1>
+                <p class="text-xl opacity-90 mb-8">Créer un compte, écrire ses premiers prompts et trouver tout de suite des usages utiles, sans bagage technique</p>
+                <div class="flex flex-wrap justify-center gap-4 text-sm">
+                    <span><i class="fas fa-calendar mr-1"></i>Juin 2026</span>
+                    <span><i class="fas fa-user mr-1"></i>Symbotis</span>
+                    <span><i class="fas fa-clock mr-1"></i>7 min de lecture</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-4"><div class="stats-card text-white p-6 rounded-lg text-center card-hover"><div class="text-3xl font-bold mb-2">10 %</div><div class="text-sm opacity-90">des entreprises françaises utilisaient l'IA en 2024</div><div class="text-xs mt-1">source INSEE</div></div><div class="stats-card text-white p-6 rounded-lg text-center card-hover"><div class="text-3xl font-bold mb-2">31 %</div><div class="text-sm opacity-90">des TPE-PME ont déjà utilisé l'IA générative</div><div class="text-xs mt-1">source Bpifrance Le Lab</div></div><div class="stats-card text-white p-6 rounded-lg text-center card-hover"><div class="text-3xl font-bold mb-2">0 €</div><div class="text-sm opacity-90">pour tester sérieusement Claude</div><div class="text-xs mt-1">offre gratuite sur claude.ai</div></div></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="py-8 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-lg shadow-lg p-8 mb-8 prose-content text-gray-700">
+<p>La plupart des dirigeants de petites entreprises ont entendu parler de l'intelligence artificielle, mais beaucoup s'arrêtent à la première question pratique : par où commencer, sans y passer ses soirées ? Claude, l'assistant développé par la société Anthropic, est l'un des outils les plus simples pour franchir ce pas. On lui parle comme à un collègue, en français, et il répond.</p>
+<h2 class="text-2xl font-bold text-Symbotis-blue">Claude, en deux mots</h2>
+<p>Claude est un assistant conversationnel : vous écrivez une demande, il génère une réponse. Il se distingue sur la qualité de rédaction en français, l'analyse de documents longs et le raisonnement sur des sujets professionnels. Pour une TPE ou une PME, cela couvre déjà beaucoup : reformuler un mail délicat, résumer un compte rendu, préparer un devis ou trier des retours clients.</p>
+<h2 class="text-2xl font-bold text-Symbotis-blue">Étape 1 : créer un compte</h2>
+<p>Rendez-vous sur claude.ai et créez un compte avec une adresse professionnelle. Le service est accessible en France, et le navigateur suffit pour commencer. Les applications mobile et bureau reprennent la même interface si vous préférez l'avoir à portée de main.</p>
+<h2 class="text-2xl font-bold text-Symbotis-blue">Étape 2 : écrire un prompt qui fonctionne</h2>
+<p>Un prompt, c'est votre consigne. La règle la plus utile tient en une phrase : donnez du contexte et dites précisément ce que vous attendez. « Écris un mail à un client » donne un résultat passe-partout. « Rédige une relance ferme mais courtoise pour une facture de 1 200 € impayée depuis trois semaines, six lignes, je propose un paiement en deux fois » donne un brouillon directement exploitable.</p>
+<p>Trois réflexes accélèrent la prise en main : commencer simple, préciser le format voulu, et corriger en conversant plutôt que de repartir de zéro. Vous pouvez écrire « plus court » ou « moins formel », et Claude ajuste.</p>
+<h2 class="text-2xl font-bold text-Symbotis-blue">Étape 3 : gratuit ou payant ?</h2>
+<p>L'offre gratuite donne accès à un modèle performant avec un quota quotidien. Si Claude devient un outil de travail quotidien, l'abonnement lève l'essentiel des limites et débloque des fonctions plus avancées. Notre conseil avant de payer : testez une semaine sur vos vraies tâches.</p>
+<h2 class="text-2xl font-bold text-Symbotis-blue">Cinq usages concrets pour une petite entreprise</h2>
+<ul class="list-disc pl-6 space-y-2">
+<li><strong>Communication client</strong> : reformuler un mail tendu, rédiger une relance, répondre à un avis en ligne.</li>
+<li><strong>Administratif</strong> : résumer une réunion, transformer des notes en document propre.</li>
+<li><strong>Commercial</strong> : préparer une trame de devis, anticiper les objections.</li>
+<li><strong>Contenu</strong> : écrire une fiche produit, un post, une newsletter courte.</li>
+<li><strong>Veille</strong> : faire expliquer un document réglementaire en langage clair.</li>
+</ul>
+<h2 class="text-2xl font-bold text-Symbotis-blue">Les erreurs qui font perdre du temps</h2>
+<p>Trois pièges reviennent souvent : poser une question floue puis juger l'outil inutile, recopier une réponse sans la relire (une vérification humaine reste indispensable sur les chiffres et le juridique), et confier des données sensibles sans se demander où elles vont. Pour un usage impliquant des informations clients, mieux vaut cadrer ce point en amont.</p>
+</div>
+
+                <div class="bg-white rounded-lg shadow-lg p-8 mb-8 border-l-4 border-Symbotis-orange">
+                    <h3 class="text-lg font-semibold text-Symbotis-blue mb-3"><i class="fas fa-book-open mr-2 text-Symbotis-orange"></i>Pour aller plus loin</h3>
+                    <p class="text-gray-700">La documentation officielle d'Anthropic propose un guide de démarrage clair et à jour : <a href="https://support.claude.com/fr/articles/8114491-bien-demarrer-avec-claude" class="text-blue-600 hover:underline">Bien démarrer avec Claude (centre d'aide Anthropic)</a>.</p>
+                </div>
+
+                <div class="gradient-bg text-white rounded-lg p-8 mb-8">
+                    <div class="text-center">
+                        <h3 class="text-2xl font-bold mb-4">Envie d'aller plus vite avec l'IA ?</h3>
+                        <p class="mb-6">Symbotis aide les TPE, PME et ETI d'Occitanie à choisir les bons outils, former leurs équipes et automatiser ce qui peut l'être. Le premier échange est gratuit.</p>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                            <a href="https://www.symbotis.com/#contact" class="bg-Symbotis-orange hover:bg-orange-600 text-white px-8 py-3 rounded-lg font-semibold transition-colors"><i class="fas fa-calendar-check mr-2"></i>Diagnostic gratuit</a>
+                            <a href="mailto:contact@symbotis.com" class="bg-white bg-opacity-20 hover:bg-opacity-30 text-white px-8 py-3 rounded-lg font-semibold transition-colors"><i class="fas fa-envelope mr-2"></i>contact@symbotis.com</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-8 mb-8">
+                    <h2 class="text-2xl font-bold text-Symbotis-blue mb-6">Articles connexes</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6"><a href="second-cerveau-ia-entreprise.html" class="block border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow"><div class="flex items-center mb-4"><div class="bg-Symbotis-blue text-white p-3 rounded-lg mr-4"><i class="fas fa-brain text-xl"></i></div><div><h3 class="text-lg font-semibold text-Symbotis-blue">Second cerveau avec l'IA</h3></div></div><p class="text-gray-700">Centraliser notes, décisions et contexte pour que l'IA travaille avec votre mémoire.</p></a><a href="claude-explique-simplement-petite-entreprise.html" class="block border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow"><div class="flex items-center mb-4"><div class="bg-Symbotis-orange text-white p-3 rounded-lg mr-4"><i class="fas fa-lightbulb text-xl"></i></div><div><h3 class="text-lg font-semibold text-Symbotis-blue">Claude expliqué simplement</h3></div></div><p class="text-gray-700">Ce qu'est Claude, ce qu'il sait faire, ses limites, et quand le préférer à un autre outil.</p></a></div>
+                </div>
+
+                <div class="bg-gray-100 rounded-lg p-6 mb-8">
+                    <h3 class="text-lg font-semibold text-Symbotis-blue mb-4">Sources et références</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm"><div><h4 class="font-semibold mb-2">Anthropic :</h4><a href="https://support.claude.com/fr/articles/8114491-bien-demarrer-avec-claude" class="text-blue-600 hover:underline block mb-1">Centre d'aide : bien démarrer avec Claude</a></div><div><h4 class="font-semibold mb-2">Bpifrance Le Lab :</h4><a href="https://lelab.bpifrance.fr/Etudes/31-des-tpe-et-pme-utilisent-l-ia-generative" class="text-blue-600 hover:underline block mb-1">31 % des TPE-PME utilisent l'IA générative</a></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-Symbotis-blue text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-Symbotis-orange">Symbotis</h3>
+                    <p class="text-gray-300 mb-4">Transformation & Innovation made easy</p>
+                    <p class="text-gray-400 text-sm">Expert en accompagnement digital, transformation IA et formation TPE PME en Occitanie.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Navigation</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="index.html" class="hover:text-Symbotis-orange transition-colors">Accueil Blog</a></li>
+                        <li><a href="formation-ia-tpe-pme.html" class="hover:text-Symbotis-orange transition-colors">Formation IA</a></li>
+                        <li><a href="digitalisation-tpe-pme.html" class="hover:text-Symbotis-orange transition-colors">Digitalisation</a></li>
+                        <li><a href="cybersecurite-pme.html" class="hover:text-Symbotis-orange transition-colors">Cybersécurité</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">symbotis.com</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="https://www.symbotis.com/" class="hover:text-Symbotis-orange transition-colors">Accueil</a></li>
+                        <li><a href="https://www.symbotis.com/#services" class="hover:text-Symbotis-orange transition-colors">Services</a></li>
+                        <li><a href="https://www.symbotis.com/#expertise" class="hover:text-Symbotis-orange transition-colors">Expertise</a></li>
+                        <li><a href="https://www.symbotis.com/#contact" class="hover:text-Symbotis-orange transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <div class="space-y-2 text-gray-300">
+                        <p><i class="fas fa-envelope mr-2"></i><a href="mailto:contact@symbotis.com" class="hover:text-Symbotis-orange transition-colors">contact@symbotis.com</a></p>
+                        <p><i class="fas fa-phone mr-2"></i><a href="tel:+33686846429" class="hover:text-Symbotis-orange transition-colors">+33 (0)6 86 84 64 29</a></p>
+                        <p><i class="fas fa-map-marker-alt mr-2"></i>Occitanie, France</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-600 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 Symbotis - Tous droits réservés | Accompagnement Digital & Formation IA TPE PME Occitanie</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

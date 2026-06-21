@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprendre le « harnais » d'un agent IA, sans être technique | Symbotis Occitanie</title>
+    <meta name="description" content="Pourquoi le modèle d'IA ne suffit pas, ce qu'apporte le harnais (harness) d'un agent, et ce que cela implique pour choisir un outil. Vulgarisé pour décideurs.">
+    <meta property="og:title" content="Comprendre le « harnais » d'un agent IA, sans être technique">
+    <meta property="og:description" content="Pourquoi le modèle d'IA ne suffit pas, ce qu'apporte le harnais (harness) d'un agent, et ce que cela implique pour choisir un outil. Vulgarisé pour décideurs.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://blog.symbotis.com/comprendre-harnais-agent-ia.html">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <style>
+        :root { --Symbotis-blue: #1F2A63; --Symbotis-orange: #F39448; --Symbotis-gray: #6B7280; }
+        .bg-Symbotis-blue { background-color: var(--Symbotis-blue); }
+        .text-Symbotis-blue { color: var(--Symbotis-blue); }
+        .bg-Symbotis-orange { background-color: var(--Symbotis-orange); }
+        .text-Symbotis-orange { color: var(--Symbotis-orange); }
+        .border-Symbotis-orange { border-color: var(--Symbotis-orange); }
+        .gradient-bg { background: linear-gradient(135deg, var(--Symbotis-blue) 0%, #2563EB 100%); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1); }
+        .stats-card { background: linear-gradient(135deg, var(--Symbotis-orange) 0%, #F97316 100%); }
+        .prose-content p { margin-bottom: 1.25rem; line-height: 1.8; }
+        .prose-content h2 { margin-top: 2.5rem; }
+        .prose-content ul { margin-bottom: 1.25rem; }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <header class="bg-Symbotis-blue text-white shadow-lg">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <a href="https://www.symbotis.com/" class="text-2xl font-bold text-Symbotis-orange">Symbotis</a>
+                    <span class="ml-4 text-sm opacity-75">/ Blog</span>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="https://www.symbotis.com/" class="hover:text-Symbotis-orange transition-colors">Accueil</a>
+                    <a href="https://www.symbotis.com/#services" class="hover:text-Symbotis-orange transition-colors">Services</a>
+                    <a href="https://www.symbotis.com/#expertise" class="hover:text-Symbotis-orange transition-colors">Expertise</a>
+                    <a href="https://www.symbotis.com/#contact" class="hover:text-Symbotis-orange transition-colors">Contact</a>
+                    <a href="index.html" class="bg-Symbotis-orange px-4 py-2 rounded hover:bg-orange-600 transition-colors">Blog</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="bg-white border-b">
+        <div class="container mx-auto px-6 py-3">
+            <nav class="flex items-center space-x-2 text-sm">
+                <a href="index.html" class="text-Symbotis-blue hover:text-Symbotis-orange"><i class="fas fa-home mr-1"></i>Accueil Blog</a>
+                <span class="text-gray-400">/</span>
+                <span class="text-gray-600">Le harnais d'un agent IA</span>
+            </nav>
+        </div>
+    </div>
+
+    <section class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <span class="inline-block bg-Symbotis-orange px-4 py-2 rounded-full text-sm font-medium mb-4">
+                    <i class="fas fa-microchip mr-2"></i>Agents IA
+                </span>
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Comprendre le « harnais » d'un agent IA, sans jargon</h1>
+                <p class="text-xl opacity-90 mb-8">Pourquoi le modèle ne suffit pas, et ce que le harnais apporte vraiment au résultat</p>
+                <div class="flex flex-wrap justify-center gap-4 text-sm">
+                    <span><i class="fas fa-calendar mr-1"></i>Juin 2026</span>
+                    <span><i class="fas fa-user mr-1"></i>Symbotis</span>
+                    <span><i class="fas fa-clock mr-1"></i>6 min de lecture</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-4"><div class="stats-card text-white p-6 rounded-lg text-center card-hover"><div class="text-3xl font-bold mb-2">2 briques</div><div class="text-sm opacity-90">un agent = un modèle + un harnais</div><div class="text-xs mt-1">les fondamentaux</div></div><div class="stats-card text-white p-6 rounded-lg text-center card-hover"><div class="text-3xl font-bold mb-2">Le harnais</div><div class="text-sm opacity-90">ce qui transforme un modèle en outil de travail</div><div class="text-xs mt-1">logiciel autour du modèle</div></div><div class="stats-card text-white p-6 rounded-lg text-center card-hover"><div class="text-3xl font-bold mb-2">Résultat</div><div class="text-sm opacity-90">fiabilité et actions concrètes</div><div class="text-xs mt-1">au-delà du texte</div></div></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="py-8 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-lg shadow-lg p-8 mb-8 prose-content text-gray-700">
+<p>Quand on compare des agents IA, on parle souvent du modèle (Claude, un autre). Mais le modèle n'est que la moitié de l'histoire. L'autre moitié, le « harnais », explique pourquoi deux agents basés sur le même modèle peuvent donner des résultats très différents.</p>
+<h2 class="text-2xl font-bold text-Symbotis-blue">C'est quoi, un harnais ?</h2>
+<p>Le harnais (en anglais, harness) est la couche logicielle qui entoure le modèle. C'est elle qui décide quels outils l'agent peut utiliser, comment il enchaîne les étapes, ce qu'il garde en mémoire et comment il gère ses erreurs. Le modèle réfléchit, le harnais organise le travail autour de lui.</p>
+<h2 class="text-2xl font-bold text-Symbotis-blue">Modèle et harnais : qui fait quoi ?</h2>
+<p>Le modèle apporte la compréhension et le raisonnement. Le harnais apporte la mécanique : lire un fichier, lancer une commande, appeler un service, vérifier le résultat, recommencer si besoin. Sans harnais, un modèle se contente de répondre. Avec un bon harnais, il devient capable d'agir de bout en bout.</p>
+<h2 class="text-2xl font-bold text-Symbotis-blue">Pourquoi ça compte pour vous</h2>
+<p>Pour une entreprise, le harnais détermine la fiabilité réelle de l'outil. Un agent qui sait corriger ses propres erreurs, demander un avis au bon moment ou refuser une action dangereuse, c'est le harnais qui le permet. La qualité du modèle ne suffit pas à garantir un agent sûr.</p>
+<h2 class="text-2xl font-bold text-Symbotis-blue">Les couches utiles à connaître</h2>
+<p>Sans entrer dans la technique, retenez quelques éléments : des instructions de cadrage (les règles à suivre), des outils connectés (vos données, vos services), une mémoire (pour garder le contexte) et des garde-fous (pour bloquer ce qui ne doit pas se faire). Ces couches font la différence entre une démo séduisante et un outil fiable au quotidien.</p>
+<h2 class="text-2xl font-bold text-Symbotis-blue">Ce que cela change pour choisir un outil</h2>
+<p>Quand vous évaluez une solution d'agent, ne regardez pas seulement « quel modèle ». Demandez ce que le harnais permet : quels outils, quelle mémoire, quels contrôles. C'est souvent là que se joue la valeur réelle pour votre activité.</p>
+</div>
+
+                <div class="bg-white rounded-lg shadow-lg p-8 mb-8 border-l-4 border-Symbotis-orange">
+                    <h3 class="text-lg font-semibold text-Symbotis-blue mb-3"><i class="fas fa-book-open mr-2 text-Symbotis-orange"></i>Pour aller plus loin</h3>
+                    <p class="text-gray-700">Un article qui explique le rôle du harnais dans un agent de code : <a href="https://www.journaldunet.com/intelligence-artificielle/1551417-tutoriel-comment-configurer-un-agent-de-code-a-cout-zero-qui-fonctionne-vraiment/" class="text-blue-600 hover:underline">Configurer un agent de code (Journal du Net)</a>.</p>
+                </div>
+
+                <div class="gradient-bg text-white rounded-lg p-8 mb-8">
+                    <div class="text-center">
+                        <h3 class="text-2xl font-bold mb-4">Envie d'aller plus vite avec l'IA ?</h3>
+                        <p class="mb-6">Symbotis aide les TPE, PME et ETI d'Occitanie à choisir les bons outils, former leurs équipes et automatiser ce qui peut l'être. Le premier échange est gratuit.</p>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                            <a href="https://www.symbotis.com/#contact" class="bg-Symbotis-orange hover:bg-orange-600 text-white px-8 py-3 rounded-lg font-semibold transition-colors"><i class="fas fa-calendar-check mr-2"></i>Diagnostic gratuit</a>
+                            <a href="mailto:contact@symbotis.com" class="bg-white bg-opacity-20 hover:bg-opacity-30 text-white px-8 py-3 rounded-lg font-semibold transition-colors"><i class="fas fa-envelope mr-2"></i>contact@symbotis.com</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-8 mb-8">
+                    <h2 class="text-2xl font-bold text-Symbotis-blue mb-6">Articles connexes</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6"><a href="creer-premier-agent-ia-sans-code.html" class="block border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow"><div class="flex items-center mb-4"><div class="bg-Symbotis-blue text-white p-3 rounded-lg mr-4"><i class="fas fa-diagram-project text-xl"></i></div><div><h3 class="text-lg font-semibold text-Symbotis-blue">Premier agent IA sans code</h3></div></div><p class="text-gray-700">Chatbot ou agent ? Les briques d'un agent et comment en mettre un en place sans coder.</p></a><a href="automatiser-taches-repetitives-ia.html" class="block border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow"><div class="flex items-center mb-4"><div class="bg-Symbotis-orange text-white p-3 rounded-lg mr-4"><i class="fas fa-bolt text-xl"></i></div><div><h3 class="text-lg font-semibold text-Symbotis-blue">Automatiser par paliers</h3></div></div><p class="text-gray-700">Trois niveaux d'automatisation, du plus simple au plus avancé, pour gagner du temps sans complexité.</p></a></div>
+                </div>
+
+                <div class="bg-gray-100 rounded-lg p-6 mb-8">
+                    <h3 class="text-lg font-semibold text-Symbotis-blue mb-4">Sources et références</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm"><div><h4 class="font-semibold mb-2">Journal du Net :</h4><a href="https://www.journaldunet.com/intelligence-artificielle/1551417-tutoriel-comment-configurer-un-agent-de-code-a-cout-zero-qui-fonctionne-vraiment/" class="text-blue-600 hover:underline block mb-1">Agent de code : modèle et harnais expliqués</a></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-Symbotis-blue text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-Symbotis-orange">Symbotis</h3>
+                    <p class="text-gray-300 mb-4">Transformation & Innovation made easy</p>
+                    <p class="text-gray-400 text-sm">Expert en accompagnement digital, transformation IA et formation TPE PME en Occitanie.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Navigation</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="index.html" class="hover:text-Symbotis-orange transition-colors">Accueil Blog</a></li>
+                        <li><a href="formation-ia-tpe-pme.html" class="hover:text-Symbotis-orange transition-colors">Formation IA</a></li>
+                        <li><a href="digitalisation-tpe-pme.html" class="hover:text-Symbotis-orange transition-colors">Digitalisation</a></li>
+                        <li><a href="cybersecurite-pme.html" class="hover:text-Symbotis-orange transition-colors">Cybersécurité</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">symbotis.com</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="https://www.symbotis.com/" class="hover:text-Symbotis-orange transition-colors">Accueil</a></li>
+                        <li><a href="https://www.symbotis.com/#services" class="hover:text-Symbotis-orange transition-colors">Services</a></li>
+                        <li><a href="https://www.symbotis.com/#expertise" class="hover:text-Symbotis-orange transition-colors">Expertise</a></li>
+                        <li><a href="https://www.symbotis.com/#contact" class="hover:text-Symbotis-orange transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <div class="space-y-2 text-gray-300">
+                        <p><i class="fas fa-envelope mr-2"></i><a href="mailto:contact@symbotis.com" class="hover:text-Symbotis-orange transition-colors">contact@symbotis.com</a></p>
+                        <p><i class="fas fa-phone mr-2"></i><a href="tel:+33686846429" class="hover:text-Symbotis-orange transition-colors">+33 (0)6 86 84 64 29</a></p>
+                        <p><i class="fas fa-map-marker-alt mr-2"></i>Occitanie, France</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-600 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 Symbotis - Tous droits réservés | Accompagnement Digital & Formation IA TPE PME Occitanie</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claude Design : créer ses visuels et prototypes sans être designer | Symbotis Occitanie</title>
+    <meta name="description" content="Générer une landing, un pitch ou un one-pager à partir d'une description, exporter vers Canva, PDF ou PPTX : ce qu'est Claude Design, comment ça marche, et ses limites.">
+    <meta property="og:title" content="Claude Design : créer ses visuels et prototypes sans être designer">
+    <meta property="og:description" content="Générer une landing, un pitch ou un one-pager à partir d'une description, exporter vers Canva, PDF ou PPTX : ce qu'est Claude Design, comment ça marche, et ses limites.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://blog.symbotis.com/claude-design-visuels-prototypes.html">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <style>
+        :root { --Symbotis-blue: #1F2A63; --Symbotis-orange: #F39448; --Symbotis-gray: #6B7280; }
+        .bg-Symbotis-blue { background-color: var(--Symbotis-blue); }
+        .text-Symbotis-blue { color: var(--Symbotis-blue); }
+        .bg-Symbotis-orange { background-color: var(--Symbotis-orange); }
+        .text-Symbotis-orange { color: var(--Symbotis-orange); }
+        .border-Symbotis-orange { border-color: var(--Symbotis-orange); }
+        .gradient-bg { background: linear-gradient(135deg, var(--Symbotis-blue) 0%, #2563EB 100%); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1); }
+        .stats-card { background: linear-gradient(135deg, var(--Symbotis-orange) 0%, #F97316 100%); }
+        .prose-content p { margin-bottom: 1.25rem; line-height: 1.8; }
+        .prose-content h2 { margin-top: 2.5rem; }
+        .prose-content ul { margin-bottom: 1.25rem; }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <header class="bg-Symbotis-blue text-white shadow-lg">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <a href="https://www.symbotis.com/" class="text-2xl font-bold text-Symbotis-orange">Symbotis</a>
+                    <span class="ml-4 text-sm opacity-75">/ Blog</span>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="https://www.symbotis.com/" class="hover:text-Symbotis-orange transition-colors">Accueil</a>
+                    <a href="https://www.symbotis.com/#services" class="hover:text-Symbotis-orange transition-colors">Services</a>
+                    <a href="https://www.symbotis.com/#expertise" class="hover:text-Symbotis-orange transition-colors">Expertise</a>
+                    <a href="https://www.symbotis.com/#contact" class="hover:text-Symbotis-orange transition-colors">Contact</a>
+                    <a href="index.html" class="bg-Symbotis-orange px-4 py-2 rounded hover:bg-orange-600 transition-colors">Blog</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="bg-white border-b">
+        <div class="container mx-auto px-6 py-3">
+            <nav class="flex items-center space-x-2 text-sm">
+                <a href="index.html" class="text-Symbotis-blue hover:text-Symbotis-orange"><i class="fas fa-home mr-1"></i>Accueil Blog</a>
+                <span class="text-gray-400">/</span>
+                <span class="text-gray-600">Claude Design</span>
+            </nav>
+        </div>
+    </div>
+
+    <section class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <span class="inline-block bg-Symbotis-orange px-4 py-2 rounded-full text-sm font-medium mb-4">
+                    <i class="fas fa-palette mr-2"></i>Création
+                </span>
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Claude Design : créer ses visuels et prototypes sans être designer</h1>
+                <p class="text-xl opacity-90 mb-8">Générer une landing, un pitch ou un one-pager à partir d'une simple description</p>
+                <div class="flex flex-wrap justify-center gap-4 text-sm">
+                    <span><i class="fas fa-calendar mr-1"></i>Juin 2026</span>
+                    <span><i class="fas fa-user mr-1"></i>Symbotis</span>
+                    <span><i class="fas fa-clock mr-1"></i>6 min de lecture</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-4"><div class="stats-card text-white p-6 rounded-lg text-center card-hover"><div class="text-3xl font-bold mb-2">Inclus</div><div class="text-sm opacity-90">compris dans les abonnements Pro et Max</div><div class="text-xs mt-1">pas de surcoût</div></div><div class="stats-card text-white p-6 rounded-lg text-center card-hover"><div class="text-3xl font-bold mb-2">Exports</div><div class="text-sm opacity-90">Canva, PDF, PPTX, HTML</div><div class="text-xs mt-1">intégration facile</div></div><div class="stats-card text-white p-6 rounded-lg text-center card-hover"><div class="text-3xl font-bold mb-2">Avril 2026</div><div class="text-sm opacity-90">lancement de Claude Design</div><div class="text-xs mt-1">aperçu de recherche</div></div></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="py-8 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-lg shadow-lg p-8 mb-8 prose-content text-gray-700">
+<p>Produire un visuel correct sans compétence en design a longtemps été un casse-tête pour les petites entreprises. Claude Design, lancé par Anthropic en avril 2026, propose une autre voie : décrire ce que l'on veut et obtenir un premier rendu en quelques secondes.</p>
+<h2 class="text-2xl font-bold text-Symbotis-blue">Qu'est-ce que Claude Design ?</h2>
+<p>Claude Design est un générateur de visuels interactifs intégré à Claude. Vous décrivez votre besoin (une landing page, un pitch, un one-pager marketing) et l'outil produit une première version. Le résultat n'est pas une image figée : c'est une page vivante que l'on peut cliquer et affiner.</p>
+<h2 class="text-2xl font-bold text-Symbotis-blue">Ce que l'on peut produire</h2>
+<p>Prototypes d'application, présentations, supports marketing, maquettes de page : le champ est large. Pour une PME, cela couvre la préparation d'un pitch investisseur, une page de présentation d'offre ou un visuel de campagne, sans passer par un studio.</p>
+<h2 class="text-2xl font-bold text-Symbotis-blue">Comment ça marche</h2>
+<p>Vous formulez une demande, vous obtenez un rendu, puis vous ajustez en conversant ou via des commentaires. On peut demander un autre ton, une autre mise en page, une variante. L'aller-retour se fait en langage courant, sans manipuler un logiciel de design.</p>
+<h2 class="text-2xl font-bold text-Symbotis-blue">Exports et intégration</h2>
+<p>Le travail s'exporte vers Canva, en PDF, en PPTX ou en HTML. Un marketeur peut récupérer le visuel dans Canva pour l'éditer en équipe, un dirigeant peut sortir un PDF pour un rendez-vous, un développeur peut partir du HTML. Cette souplesse facilite l'usage réel.</p>
+<h2 class="text-2xl font-bold text-Symbotis-blue">Quand le préférer, et ses limites</h2>
+<p>Claude Design brille pour passer vite de l'idée à un premier visuel présentable. Il ne remplace pas un designer pour une identité de marque complète ou un projet exigeant. Voyez-le comme un point de départ rapide, à affiner ensuite selon vos besoins. L'outil est disponible avec un abonnement Pro, Max, Team ou Enterprise.</p>
+</div>
+
+                <div class="bg-white rounded-lg shadow-lg p-8 mb-8 border-l-4 border-Symbotis-orange">
+                    <h3 class="text-lg font-semibold text-Symbotis-blue mb-3"><i class="fas fa-book-open mr-2 text-Symbotis-orange"></i>Pour aller plus loin</h3>
+                    <p class="text-gray-700">Un guide débutant qui détaille les capacités et le positionnement de l'outil : <a href="https://help.apiyi.com/fr/claude-design-anthropic-beginners-guide-2026-fr.html" class="text-blue-600 hover:underline">Qu'est-ce que Claude Design ?</a>.</p>
+                </div>
+
+                <div class="gradient-bg text-white rounded-lg p-8 mb-8">
+                    <div class="text-center">
+                        <h3 class="text-2xl font-bold mb-4">Envie d'aller plus vite avec l'IA ?</h3>
+                        <p class="mb-6">Symbotis aide les TPE, PME et ETI d'Occitanie à choisir les bons outils, former leurs équipes et automatiser ce qui peut l'être. Le premier échange est gratuit.</p>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                            <a href="https://www.symbotis.com/#contact" class="bg-Symbotis-orange hover:bg-orange-600 text-white px-8 py-3 rounded-lg font-semibold transition-colors"><i class="fas fa-calendar-check mr-2"></i>Diagnostic gratuit</a>
+                            <a href="mailto:contact@symbotis.com" class="bg-white bg-opacity-20 hover:bg-opacity-30 text-white px-8 py-3 rounded-lg font-semibold transition-colors"><i class="fas fa-envelope mr-2"></i>contact@symbotis.com</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-8 mb-8">
+                    <h2 class="text-2xl font-bold text-Symbotis-blue mb-6">Articles connexes</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6"><a href="concevoir-maquette-site-claude-code.html" class="block border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow"><div class="flex items-center mb-4"><div class="bg-Symbotis-blue text-white p-3 rounded-lg mr-4"><i class="fas fa-code text-xl"></i></div><div><h3 class="text-lg font-semibold text-Symbotis-blue">Maquette & site avec Claude Code</h3></div></div><p class="text-gray-700">Décrire une page en français, obtenir du code, l'ajuster en conversant. Idéal pour prototyper.</p></a><a href="creer-videos-ia-communication.html" class="block border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow"><div class="flex items-center mb-4"><div class="bg-Symbotis-orange text-white p-3 rounded-lg mr-4"><i class="fas fa-video text-xl"></i></div><div><h3 class="text-lg font-semibold text-Symbotis-blue">Créer des vidéos avec l'IA</h3></div></div><p class="text-gray-700">Décrire une vidéo, la générer, l'ajuster en une phrase. Pour les formats courts et explicatifs.</p></a></div>
+                </div>
+
+                <div class="bg-gray-100 rounded-lg p-6 mb-8">
+                    <h3 class="text-lg font-semibold text-Symbotis-blue mb-4">Sources et références</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm"><div><h4 class="font-semibold mb-2">Apiyi :</h4><a href="https://help.apiyi.com/fr/claude-design-anthropic-beginners-guide-2026-fr.html" class="text-blue-600 hover:underline block mb-1">Guide débutant Claude Design 2026</a></div><div><h4 class="font-semibold mb-2">Agence Scroll :</h4><a href="https://agence-scroll.com/blog/claude-design-anthropic-guide-complet" class="text-blue-600 hover:underline block mb-1">Claude Design : guide complet</a></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-Symbotis-blue text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-Symbotis-orange">Symbotis</h3>
+                    <p class="text-gray-300 mb-4">Transformation & Innovation made easy</p>
+                    <p class="text-gray-400 text-sm">Expert en accompagnement digital, transformation IA et formation TPE PME en Occitanie.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Navigation</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="index.html" class="hover:text-Symbotis-orange transition-colors">Accueil Blog</a></li>
+                        <li><a href="formation-ia-tpe-pme.html" class="hover:text-Symbotis-orange transition-colors">Formation IA</a></li>
+                        <li><a href="digitalisation-tpe-pme.html" class="hover:text-Symbotis-orange transition-colors">Digitalisation</a></li>
+                        <li><a href="cybersecurite-pme.html" class="hover:text-Symbotis-orange transition-colors">Cybersécurité</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">symbotis.com</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="https://www.symbotis.com/" class="hover:text-Symbotis-orange transition-colors">Accueil</a></li>
+                        <li><a href="https://www.symbotis.com/#services" class="hover:text-Symbotis-orange transition-colors">Services</a></li>
+                        <li><a href="https://www.symbotis.com/#expertise" class="hover:text-Symbotis-orange transition-colors">Expertise</a></li>
+                        <li><a href="https://www.symbotis.com/#contact" class="hover:text-Symbotis-orange transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <div class="space-y-2 text-gray-300">
+                        <p><i class="fas fa-envelope mr-2"></i><a href="mailto:contact@symbotis.com" class="hover:text-Symbotis-orange transition-colors">contact@symbotis.com</a></p>
+                        <p><i class="fas fa-phone mr-2"></i><a href="tel:+33686846429" class="hover:text-Symbotis-orange transition-colors">+33 (0)6 86 84 64 29</a></p>
+                        <p><i class="fas fa-map-marker-alt mr-2"></i>Occitanie, France</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-600 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 Symbotis - Tous droits réservés | Accompagnement Digital & Formation IA TPE PME Occitanie</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
